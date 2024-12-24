@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "prod":"pnpm exec kill --name api.freemoon && pnpm run build && pnpm exec pm2 start -i max --name api.freemoon dist/main.js"
+    "prod": "pnpm exec kill --name api.freemoon && pnpm run build && pnpm exec pm2 start -i max --name api.freemoon dist/main.js"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
